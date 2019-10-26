@@ -14,14 +14,11 @@ end
 
 def long_planeteer_calls# code an argument here
   # Your code here
-  i = 0 
-  while i < calls.length do 
-    if (calls[i].length > 4)
-     return true
-   end
-      i += 1
+  if array.any? {|n| n.length > 4}
+    return true
+  else
+    return false
   end
-   false
 end
 
 def find_the_cheese# code an argument here
